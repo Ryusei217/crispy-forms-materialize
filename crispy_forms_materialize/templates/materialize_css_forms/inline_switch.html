@@ -5,7 +5,7 @@
 {% else %}
     <div id="div_{{ field.auto_id }}" class="row inline-field inline-checkbox">{% spaceless %}
         <div class="{{ label_column }}">
-            <label{% if label_class or field.field.required %} class="{{ label_class }}{% if field.field.required %} required{% endif %}"{% endif %}>
+            <label {% if label_class or field.field.required %} class="{{ label_class }}{% if field.field.required %} required{% endif %}"{% endif %}>
                 {{ field.label|safe }}{% if field.field.required %}<span class="asterisk">*</span>{% endif %}
             </label>
         </div>
